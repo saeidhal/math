@@ -1,461 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سلسلة النظريات والقواعد في الرياضيات</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .section-header::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 50px;
-      height: 3px;
-      background: #4f46e5;
-      transition: width 0.3s ease;
-    }
-    .section-header:hover::before {
-      width: 100px;
-    }
-    .rule-card {
-      transition: all 0.3s ease;
-      border-right: 4px solid transparent;
-    }
-    .rule-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-      border-right-color: #4f46e5;
-    }
-    .math-formula {
-      direction: ltr;
-      text-align: left;
-      font-family: 'Times New Roman', serif;
-    }
-    .icon-circle {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-    }
-  </style>
-</head>
-<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen text-gray-800">
-  <div class="container mx-auto px-4 py-8 max-w-6xl">
-    <header class="text-center mb-12">
-      <h1 class="text-5xl font-bold text-indigo-800 mb-4 flex items-center justify-center gap-3">
-        <i class="fas fa-clipboard-list text-indigo-600"></i>
-        سلسلة النظريات والقواعد في الرياضيات
-      </h1>
-      <p class="text-xl text-gray-600">دليل شامل للقواعد الأساسية مع أمثلة توضيحية</p>
-    </header>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-red-500 to-red-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-triangle text-yellow-300"></i>
-          1. المثلثات
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-red-700 flex items-center gap-2">
-              <i class="fas fa-angle-double-up"></i>
-              مجموع زوايا المثلث = 180°
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <polygon points="50,10 90,90 10,90" stroke="#EF4444" stroke-width="4" fill="none" />
-                <path d="M50,10 L90,90" stroke="#EF4444" stroke-width="4" fill="none" />
-                <path d="M90,90 L10,90" stroke="#EF4444" stroke-width="4" fill="none" />
-                <path d="M10,90 L50,10" stroke="#EF4444" stroke-width="4" fill="none" />
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">مجموع الزوايا الداخلية لأي مثلث يساوي دائمًا 180 درجة.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-red-400">
-            <p class="math-formula font-mono text-lg">∠A + ∠B + ∠C = 180°</p>
-          </div>
-          <div class="mt-4 p-4 bg-blue-50 rounded-lg">
-            <strong>مثال:</strong> إذا كانت زوايا مثلث هي 50° و 60°، فإن الزاوية الثالثة = 180 - (50 + 60) = 70°.
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-red-700 flex items-center gap-2">
-              <i class="fas fa-ruler-triangle"></i>
-              نظرية فيثاغورس
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <polygon points="10,90 90,90 90,10" stroke="#EF4444" stroke-width="4" fill="none" />
-                <text x="50" y="98" font-size="12" text-anchor="middle" fill="#EF4444">a</text>
-                <text x="95" y="50" font-size="12" text-anchor="middle" fill="#EF4444">b</text>
-                <text x="50" y="45" font-size="12" text-anchor="middle" fill="#EF4444">c</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">في المثلث القائم الزاوية، مربع الوتر يساوي مجموع مربعي الضلعين الآخرين.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-red-400">
-            <p class="math-formula font-mono text-lg">c² = a² + b²</p>
-          </div>
-          <div class="mt-4 p-4 bg-blue-50 rounded-lg">
-            <strong>مثال:</strong> مثلث قائم الزاوية أضلاعه 3 و 4، فإن الوتر = √(3² + 4²) = √(9 + 16) = √25 = 5.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-square-full text-yellow-300"></i>
-          2. الهندسة المستوية (المضلعات)
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-green-700 flex items-center gap-2">
-              <i class="fas fa-square-full"></i>
-              المربع
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <rect x="20" y="20" width="60" height="60" stroke="#22C55E" stroke-width="4" fill="none" />
-                <text x="50" y="85" font-size="12" text-anchor="middle" fill="#22C55E">a</text>
-                <text x="15" y="50" font-size="12" text-anchor="middle" fill="#22C55E">a</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">المربع له أربعة أضلاع متساوية في الطول وزوايا قائمة.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-green-400 space-y-2">
-            <p class="math-formula font-mono text-lg">محيط (P) = 4a</p>
-            <p class="math-formula font-mono text-lg">مساحة (A) = a²</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-green-700 flex items-center gap-2">
-              <i class="fas fa-rectangle"></i>
-              المستطيل
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <rect x="10" y="30" width="80" height="40" stroke="#22C55E" stroke-width="4" fill="none" />
-                <text x="50" y="75" font-size="12" text-anchor="middle" fill="#22C55E">l</text>
-                <text x="12" y="50" font-size="12" text-anchor="middle" fill="#22C55E">w</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">المستطيل له أربعة أضلاع متقابلة ومتوازية، وزوايا قائمة.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-green-400 space-y-2">
-            <p class="math-formula font-mono text-lg">محيط (P) = 2(l + w)</p>
-            <p class="math-formula font-mono text-lg">مساحة (A) = l × w</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-green-700 flex items-center gap-2">
-              <i class="fas fa-diamond"></i>
-              المعين
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <polygon points="50,10 90,50 50,90 10,50" stroke="#22C55E" stroke-width="4" fill="none" />
-                <text x="50" y="50" font-size="12" text-anchor="middle" fill="#22C55E">d₁</text>
-                <text x="75" y="30" font-size="12" text-anchor="middle" fill="#22C55E">d₂</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">المعين له أربعة أضلاع متساوية، والأقطار متعامدة.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-green-400 space-y-2">
-            <p class="math-formula font-mono text-lg">محيط (P) = 4a</p>
-            <p class="math-formula font-mono text-lg">مساحة (A) = ½ × d₁ × d₂</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-teal-500 to-teal-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-circle text-yellow-300"></i>
-          3. الدائرة
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-teal-700 flex items-center gap-2">
-              <i class="fas fa-compass"></i>
-              الزاوية المركزية والمحيطية
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <circle cx="50" cy="50" r="40" stroke="#14B8A6" stroke-width="4" fill="none" />
-                <path d="M50,50 L90,50 L70,15 L50,50" stroke="#14B8A6" stroke-width="2" fill="none" />
-                <text x="60" y="30" font-size="12" text-anchor="middle" fill="#14B8A6">2x</text>
-                <path d="M90,50 A40,40 0 0,0 70,15" stroke="#14B8A6" stroke-width="4" fill="none" />
-                <circle cx="90" cy="50" r="2" fill="#14B8A6" />
-                <circle cx="70" cy="15" r="2" fill="#14B8A6" />
-                <circle cx="50" cy="50" r="2" fill="#14B8A6" />
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">الزاوية المركزية تساوي ضعف الزاوية المحيطية المشتركة معها في القوس.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-teal-400">
-            <p class="math-formula font-mono text-lg">∠Central = 2 * ∠Inscribed</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-teal-700 flex items-center gap-2">
-              <i class="fas fa-chart-pie"></i>
-              محيط ومساحة الدائرة
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <circle cx="50" cy="50" r="40" stroke="#14B8A6" stroke-width="4" fill="none" />
-                <line x1="50" y1="50" x2="90" y2="50" stroke="#14B8A6" stroke-width="2" />
-                <text x="70" y="45" font-size="12" text-anchor="middle" fill="#14B8A6">r</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">محيط الدائرة هو المسافة حولها، ومساحتها هي المنطقة التي تشغلها.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-teal-400 space-y-2">
-            <p class="math-formula font-mono text-lg">محيط (C) = 2πr</p>
-            <p class="math-formula font-mono text-lg">مساحة (A) = πr²</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-cube text-yellow-300"></i>
-          4. الهندسة الفراغية
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-purple-700 flex items-center gap-2">
-              <i class="fas fa-cubes"></i>
-              حجم المكعب
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <path d="M20,40 L60,20 L80,60 L40,80 Z M60,20 L60,60 M80,60 L40,80 M20,40 L20,80 M20,80 L40,80" stroke="#9333ea" stroke-width="4" fill="none" />
-                <text x="70" y="70" font-size="12" text-anchor="middle" fill="#9333ea">a</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">المكعب له ستة أوجه مربعة متساوية.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-purple-400">
-            <p class="math-formula font-mono text-lg">V = a³</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-purple-700 flex items-center gap-2">
-              <i class="fas fa-cylinder"></i>
-              حجم الأسطوانة
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <ellipse cx="50" cy="25" rx="30" ry="15" stroke="#9333ea" stroke-width="4" fill="none" />
-                <line x1="20" y1="25" x2="20" y2="75" stroke="#9333ea" stroke-width="4" />
-                <line x1="80" y1="25" x2="80" y2="75" stroke="#9333ea" stroke-width="4" />
-                <ellipse cx="50" cy="75" rx="30" ry="15" stroke="#9333ea" stroke-width="4" fill="none" />
-                <line x1="50" y1="25" x2="50" y2="75" stroke="#9333ea" stroke-width="2" stroke-dasharray="5,5" />
-                <text x="55" y="50" font-size="12" text-anchor="middle" fill="#9333ea">h</text>
-                <text x="75" y="75" font-size="12" text-anchor="middle" fill="#9333ea">r</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">الأسطوانة لها قاعدتان دائريتان متوازيتان.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-purple-400">
-            <p class="math-formula font-mono text-lg">V = πr²h</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-purple-700 flex items-center gap-2">
-              <i class="fas fa-cone"></i>
-              حجم المخروط
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <path d="M20,70 Q50,90 80,70 T50,70 Z" stroke="#9333ea" stroke-width="4" fill="none" />
-                <line x1="20" y1="70" x2="50" y2="10" stroke="#9333ea" stroke-width="4" />
-                <line x1="80" y1="70" x2="50" y2="10" stroke="#9333ea" stroke-width="4" />
-                <line x1="50" y1="10" x2="50" y2="70" stroke="#9333ea" stroke-width="2" stroke-dasharray="5,5" />
-                <text x="55" y="40" font-size="12" text-anchor="middle" fill="#9333ea">h</text>
-                <text x="50" y="85" font-size="12" text-anchor="middle" fill="#9333ea">r</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">المخروط له قاعدة دائرية ورأس واحد.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-purple-400">
-            <p class="math-formula font-mono text-lg">V = (1/3)πr²h</p>
-          </div>
-        </div>
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-2xl font-semibold text-purple-700 flex items-center gap-2">
-              <i class="fas fa-globe"></i>
-              حجم الكرة
-            </h3>
-            <div class="flex-shrink-0 w-24 h-24">
-              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
-                <circle cx="50" cy="50" r="40" stroke="#9333ea" stroke-width="4" fill="none" />
-                <ellipse cx="50" cy="50" rx="35" ry="15" stroke="#9333ea" stroke-width="2" fill="none" />
-                <line x1="10" y1="50" x2="90" y2="50" stroke="#9333ea" stroke-width="2" stroke-dasharray="5,5" />
-                <text x="50" y="45" font-size="12" text-anchor="middle" fill="#9333ea">r</text>
-              </svg>
-            </div>
-          </div>
-          <p class="text-gray-700 mb-4">الكرة هي جسم مستدير ثلاثي الأبعاد.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-purple-400">
-            <p class="math-formula font-mono text-lg">V = (4/3)πr³</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-calculator text-yellow-300"></i>
-          5. الجبر
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold text-blue-700 mb-4 flex items-center gap-2">
-            <i class="fas fa-equals"></i>
-            المتطابقات الشهيرة
-          </h3>
-          <p class="text-gray-700 mb-4">أهم المتطابقات الجبرية المستخدمة في التحليل والتبسيط.</p>
-          <div class="space-y-3">
-            <div class="bg-white p-4 rounded-lg border-l-4 border-blue-400">
-              <p class="math-formula font-mono text-lg">(a+b)² = a² + 2ab + b²</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg border-l-4 border-blue-400">
-              <p class="math-formula font-mono text-lg">(a-b)² = a² - 2ab + b²</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg border-l-4 border-blue-400">
-              <p class="math-formula font-mono text-lg">(a+b)(a-b) = a² - b²</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold text-blue-700 mb-4 flex items-center gap-2">
-            <i class="fas fa-square-root-alt"></i>
-            حل المعادلة التربيعية
-          </h3>
-          <p class="text-gray-700 mb-4">الصيغة العامة لحل المعادلة ax² + bx + c = 0.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-blue-400">
-            <p class="math-formula font-mono text-lg">x = [-b ± √(b² - 4ac)] / (2a)</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-orange-500 to-orange-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-integral text-yellow-300"></i>
-          6. التفاضل والتكامل
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold text-orange-700 mb-4 flex items-center gap-2">
-            <i class="fas fa-atom"></i>
-            التفاضل
-          </h3>
-          <p class="text-gray-700 mb-4">المشتقة تمثل معدل التغير اللحظي للدالة.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-orange-400">
-            <p class="math-formula font-mono text-lg">d/dx (xⁿ) = n·xⁿ⁻¹</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold text-orange-700 mb-4 flex items-center gap-2">
-            <i class="fas fa-infinity"></i>
-            التكامل
-          </h3>
-          <p class="text-gray-700 mb-4">التكامل هو العملية العكسية للتفاضل.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-orange-400">
-            <p class="math-formula font-mono text-lg">∫ xⁿ dx = xⁿ⁺¹/(n+1) + C</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl">
-      <div class="bg-gradient-to-r from-pink-500 to-pink-600 p-6 relative section-header">
-        <h2 class="text-3xl font-bold text-white flex items-center gap-3">
-          <i class="fas fa-chart-bar text-yellow-300"></i>
-          7. الإحصاء والاحتمالات
-        </h2>
-      </div>
-      <div class="p-8 space-y-8">
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold text-pink-700 mb-4 flex items-center gap-2">
-            <i class="fas fa-average"></i>
-            الوسط الحسابي
-          </h3>
-          <p class="text-gray-700 mb-4">متوسط القيم في مجموعة بيانات.</p>
-          <div class="bg-white p-4 rounded-lg border-l-4 border-pink-400">
-            <p class="math-formula font-mono text-lg">x̄ = Σxᵢ / n</p>
-          </div>
-        </div>
-
-        <div class="rule-card bg-gray-50 p-6 rounded-xl">
-          <h3 class="text-2xl font-semibold text-pink-700 mb-4 flex items-center gap-2">
-            <i class="fas fa-dice"></i>
-            قواعد الاحتمال
-          </h3>
-          <p class="text-gray-700 mb-4">القوانين الأساسية لحساب الاحتمالات.</p>
-          <div class="space-y-3">
-            <div class="bg-white p-4 rounded-lg border-l-4 border-pink-400">
-              <p class="math-formula font-mono text-lg">P(A∪B) = P(A) + P(B) - P(A∩B)</p>
-            </div>
-            <div class="bg-white p-4 rounded-lg border-l-4 border-pink-400">
-              <p class="math-formula font-mono text-lg">P(A∩B) = P(A) × P(B) [إذا كانا مستقلين]</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="text-center py-8 text-gray-600">
-      <div class="border-t pt-6">
-        <p class="text-lg">📚 دليلك الشامل للقواعد الرياضية الأساسية</p>
-        <p class="mt-2 text-sm">تم إعداده بعناية لتسهيل فهم المفاهيم الرياضية الأساسية</p>
-        <p class="mt-4 text-xs">Created by saeidhm</p>
-      </div>
-    </footer>
-  </div>
-</body>
-</html>
